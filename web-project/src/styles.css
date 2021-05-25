@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.navbar{
+    background: rgb(51, 25, 48);
+    height:80px;
+}
+.navbar img{
+    margin-left: 10px;
+}
+.navbar-nav .nav-item .nav-link{
+    color:rgb(221, 208, 208);
+    font-size: 17px;
+    padding-right: 30px;
+
+}
+.navbar-nav .nav-item .nav-link:hover{
+    color:plum;
+}
+.navbar ul {
+    margin-left: 60%;
+}
+.navbar ul li{
+    padding-right: 10px;
+}
+ .btn{
+    margin-left: 60px;
+    padding:10px 20px;
+background: rgb(51, 25, 48);
+border-radius: 10px;
+color: #fff;
+border-style: none;
+margin-right: 10px;
+}
+.btn:hover{
+    background: transparent;
+    border: 2px solid rgb(51, 25, 48);
+    color:rgb(51, 25, 48); ;
+    
+
+}
