@@ -1,0 +1,24 @@
+.about {
+  
+    background:rgb(226, 196, 217);
+    padding: 140px 100px;
+    height: 700px;
+}
+.about h4{
+    margin-top: 30px;
+}
+
+
+.follow a i{
+  
+    padding:40px;
+    color: rgb(51, 25, 48);
+    
+}
+
+
+@media screen and(max-with:600px) {
+    .follow a{
+         padding: 5px;
+    }
+}

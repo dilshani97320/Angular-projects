@@ -1,0 +1,65 @@
+.joinnow{
+  background:rgb(226, 196, 217);
+    padding: 140px 100px;
+    height: 700px;
+}
+.joinnow .main{
+    text-align: center;
+    font-size: 40px;
+    margin-top: -70px;
+    
+   
+}
+.joinnow img{
+    object-fit: cover;
+}
+.login{
+    background: #fff;
+    padding:20px 30px;
+    width: 45%;
+    float: right;
+    margin-top: -370px;
+    margin-left: 30px;
+    box-shadow: 2px 2px  rgb(178, 163, 192);
+    
+    
+
+}
+.joinnow .head h1{
+    margin-top: 70px;
+    font-size: 30px;
+
+}
+
+.joinnow .head p{
+    font-size: 15px;
+    margin-top: 20px;
+    color: rgb(124, 90, 114);
+}
+
+.joinnow .login .form-group{
+    font-size: 15px;
+    color: rgb(125, 112, 128);
+    margin-top: 20px;
+}
+.joinnow .login button{
+    margin-left: 160px;
+    padding:8px 30px;
+background: rgb(51, 25, 48);
+border-radius: 10px;
+color: #fff;
+border-style: none;
+margin-right: 10px;
+}
+.joinnow .login button:hover{
+    background: transparent;
+    border: 2px solid rgb(51, 25, 48);
+    color:rgb(51, 25, 48); ;
+}
+
+    
+@media screen and(max-width:600pc) {
+    .joinnow{
+        padding-bottom: 140px 30px;
+    }
+}
