@@ -16,13 +16,13 @@ return this.http.get(this.globalDataUrl, {responseType:'text'}).pipe(
   map(result=>{
     //console.log(result);
     let data:GlobalDataSummary[]=[];
-    let raw ={}
+    let raw:any ={}
     let rows=result.split('\n');
     rows.splice(0,1);
     //console.log( rows);
     rows.forEach(row=>{
       let cols =row.split(/,(?=\S)/)
- 
+
 let cs = {
   country:cols[3],
   confirmed:+cols[7],
@@ -30,19 +30,30 @@ let cs = {
   recovered :+cols[9],
   active:+cols[10],
   
-     }; 
+};
 
-     let temp : GlobalDataSummary = raw[cs.country];
+ 
+
+
+  let temp:any ,GlobalDataSummary = raw[cs.country];
      if(temp){
        temp.active=cs.active+temp.active
-     }
-  raw[cs.country]=cs;
+       temp.confirmed=cs.active+temp.confirmed
+       temp.deaths=cs.active+temp.deaths
+       temp.recovered=cs.active+temp.recovered
+       raw[cs.country]=temp;
 
+
+     }else{
+      raw[cs.country]=cs;
+
+     }
+  
 
       //console.log(cols);
     })
-    console.log(data);
-    return [];
+    //console.log(raw);
+    return <GlobalDataSummary[]>Object.values(raw);
   })
 )
 
