@@ -1,0 +1,43 @@
+
+#content {
+    position: absolute;
+    left:0;
+    top: 0;
+    right: 200px;
+    min-height: 100vh;
+    background: rgb(46, 45, 45);
+     
+ }
+ .heading{
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 100%;
+    min-height: 13vh;
+    background: #F84B6E;
+ }
+ img{
+     position: relative;
+     width: 100%;
+     padding-top: 15rem;
+ }
+ h2,p{
+     color: rgba(255, 255, 255, 0.925);
+     font-family: 'Patrick Hand', cursive;
+ }
+ .text{
+     padding-top:12rem;
+     text-align: center;
+ }
+ .icon{
+     display: inline-block;
+ }
+.icon i{
+    font-size: 1.5rem;
+    background: #518BFF;color:#fff;
+    margin: 1rem;
+    border-radius: 50%;
+}
+.icon i:hover{
+    background:#F84B6E ;
+}
